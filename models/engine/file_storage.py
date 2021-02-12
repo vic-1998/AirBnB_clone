@@ -6,7 +6,7 @@ Class FileStorage
 from models.base_model import BaseModel
 import json
 
-atri = {"BaseModel": BaseModel, "City": City}
+atri = {"BaseModel": BaseModel}
 
 
 class FileStorage():
@@ -42,6 +42,6 @@ class FileStorage():
                 beer = json.load(burger)
             for malta in beer:
                 self.__objects[malta] = atri[beer[malta]["__class__"]](
-                    beer[malta])
+                    **beer[malta])
         except:
             pass
