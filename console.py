@@ -103,7 +103,7 @@ class HBNBCommand(cmd.Cmd):
         floats = ["latitude", "longitude"]
         if len(args) == 0:
             print("** class name missing **")
-        elif args[0] in classes:
+        elif args[0] in tom:
             if len(args) > 1:
                 k = args[0] + "." + args[1]
                 if k in models.storage.all():
