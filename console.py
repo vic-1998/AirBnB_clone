@@ -82,6 +82,18 @@ class HBNBCommand(cmd.Cmd):
         else:
             print("** class doesn't exist **")
 
+    def do_all(self, arg):
+        """Prints all string representation of all instances"""
+        burger = shlex.split(arg)
+        beer = []
+        if burger[0] in tom:
+            pizza = models.storage.all()
+            for cheese in pizza:
+                beer.append(str(pizza[cheese]))
+            print(beer)
+        else:
+            print("** class doesn't exist **")
+            return False
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
