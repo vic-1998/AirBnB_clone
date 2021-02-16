@@ -5,6 +5,7 @@ Contains Class BaseModel
 
 from models.base_model import BaseModel
 
+
 class User(BaseModel):
     """The User class"""
 
