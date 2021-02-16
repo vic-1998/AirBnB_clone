@@ -71,7 +71,7 @@ $
 
 
 **Architecture Diagram**
-![console](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2018/6/815046647d23428a14ca.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20210213%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210213T193340Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=976f85fd260a3fe813e45abf1c355ede46148d589fd8a9622acd8dc89f80540f)
+![console](https://semanticadigital.com/wp-content/uploads/2017/01/815046647d23428a14ca.png)
 
 
 ## Authors
