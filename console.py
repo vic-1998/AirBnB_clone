@@ -58,9 +58,8 @@ class HBNBCommand(cmd.Cmd):
         if burger[0] in tom:
             if len(burger) > 1:
                 beer = burger[0] + "." + burger[1]
-                pizza = models.storage.all()
-                if beer in pizza:
-                    print(pizza[beer])
+                if beer in models.storage.all():
+                    print(models.storage.all()[beer])
                 else:
                     print("** no instance found **")
             else:
@@ -87,14 +86,22 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
 
     def do_all(self, arg):
-        """Prints all string representation of all instances"""
+        """Prints string representations of instances"""
         burger = shlex.split(arg)
         beer = []
-        if burger[0] in tom:
-            pizza = models.storage.all()
-            for cheese in pizza:
-                beer.append(str(pizza[cheese]))
-            print(beer)
+        if len(burger) == 0:
+            for value in models.storage.all().values():
+                beer.append(str(value))
+            print("[", end="")
+            print(", ".join(beer), end="")
+            print("]")
+        elif burger[0] in tom:
+            for pizza in models.storage.all():
+                if burger[0] in pizza:
+                    beer.append(str(models.storage.all()[pizza]))
+            print("[", end="")
+            print(", ".join(beer), end="")
+            print("]")
         else:
             print("** class doesn't exist **")
 
