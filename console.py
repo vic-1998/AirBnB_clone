@@ -32,7 +32,7 @@ class HBNBCommand(cmd.Cmd):
         return False
 
     def do_quit(self, arg):
-        """Quit exit de program"""
+        """Quit command to exit the program"""
         return True
 
     def do_create(self, arg):
@@ -63,13 +63,10 @@ class HBNBCommand(cmd.Cmd):
                     print(pizza[beer])
                 else:
                     print("** no instance found **")
-                    return False
             else:
                 print("** instance id missing **")
-                return False
         else:
             print("** class doesn't exist **")
-            return False
 
     def do_destroy(self, arg):
         """Deletes an instance based on the class and id"""
@@ -100,7 +97,6 @@ class HBNBCommand(cmd.Cmd):
             print(beer)
         else:
             print("** class doesn't exist **")
-            return False
 
     def do_update(self, arg):
         """Update an instance based on the class name, id, attribute & value"""
