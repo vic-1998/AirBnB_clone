@@ -1,1 +1,80 @@
-AirBnB clone - The console
+# AirBnB clone - The console
+
+![AirBnB](https://semanticadigital.com/wp-content/uploads/2017/01/coverairbnb.png)
+
+
+The console is a Command interpreter to manage your AirBnB objects
+
+## Description
+
+This project put in place a parent class (called BaseModel) to take care of the initialization, serialization and deserialization of your future instances
+create a simple flow of serialization/deserialization: Instance <-> Dictionary <-> JSON string <-> file
+create all classes used for AirBnB (User, State, City, Place) that inherit from BaseModel
+create the first abstracted storage engine of the project: File storage.
+create all unittests to validate all our classes and storage engine
+
+**Whats a AirBnB command interpreter?**
+
+A command be able to manage the objects of our project:
+
+Create a new object (ex: a new User or a new Place)
+Retrieve an object from a file, a database etc
+Do operations on objects (count, compute stats, etc)
+Update attributes of an object
+Destroy an object
+
+### Execution
+
+To use in a **interactive mode**, compile `$ ./console.py` 
+
+Usage: **(hbnb)** [commands]
+
+Example:
+```
+$ ./console.py
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+
+(hbnb) 
+(hbnb) 
+(hbnb) quit
+$
+```
+
+To use in a **in non-interactive mode**
+
+Example:
+```
+$ echo "help" | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+$ cat test_help
+help
+$
+$ cat test_help | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+```
+
+
+**Architecture Diagram**
+![console](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2018/6/815046647d23428a14ca.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20210213%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210213T193340Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=976f85fd260a3fe813e45abf1c355ede46148d589fd8a9622acd8dc89f80540f)
+
+
+## Authors
+
+* David Alzate <[Illker](https://github.com/illker)>
+* Victor Manuel Plaza <[vic-1998](https://github.com/vic-1998)>
