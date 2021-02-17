@@ -13,7 +13,7 @@ from models.review import Review
 import json
 
 atri = {"BaseModel": BaseModel, "City": City, "State": State,
-        "Amenity": Amenity, "Place": Place, "Review": Review}
+        "Amenity": Amenity, "User": User, "Place": Place, "Review": Review}
 
 
 class FileStorage():
