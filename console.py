@@ -16,7 +16,7 @@ from models.review import Review
 
 
 tom = {"BaseModel": BaseModel, "City": City, "State": State,
-       "Amenity": Amenity, "Place": Place, "Review": Review}
+       "Amenity": Amenity, "User": User, "Place": Place, "Review": Review}
 
 
 class HBNBCommand(cmd.Cmd):
