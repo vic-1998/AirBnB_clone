@@ -7,14 +7,13 @@
   justify-content: center;
 }
 
-.places h1 {
+.places > h1 {
   font-size: 30px;
   padding-left: 20px;
   padding-top: 20px;
   margin-bottom: 0px;
   flex: 0 1 100%;
 }
-
 .places > article {
   width: 390px;
   padding: 20px 20px 20px 20px;
